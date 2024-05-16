@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Cart</title>
+  <style>
+    /* CSS for styling */
+    .item {
+      display: inline-block;
+      margin: 10px;
+    }
+    .item img {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Image Cart</h1>
+
+  <div class="item" id="item1" onclick="addItemToCart('Item 1', 10)">
+    <img src="download (7).jpg" alt="Item 1">
+    <p>Item 1 - $10</p>
+  </div>
+
+  <div class="item" id="item2" onclick="addItemToCart('Item 2', 20)">
+    <img src="download.jpg" alt="Item 2">
+    <p>Item 2 - $20</p>
+  </div>
+
+  <div class="item" id="item3" onclick="addItemToCart('Item 3', 30)">
+    <img src="images.jpg" alt="Item 2">
+    <p>Item 3 - $30</p>
+  </div>
+
+  <div class="item" id="item4" onclick="addItemToCart('Item 4', 40)">
+    <img src="images (1).jpg" alt="Item 2">
+    <p>Item 4 - $40</p>
+  </div>
+
+  <div class="item" id="item5" onclick="addItemToCart('Item 5', 50)">
+    <img src="download (1).jpg" alt="Item 2">
+    <p>Item 5 - $50</p>
+  </div>
+
+  <div class="item" id="item6" onclick="addItemToCart('Item 6', 60)">
+    <img src="download (2).jpg" alt="Item 2">
+    <p>Item 6 - $60</p>
+  </div>
+
+  <div class="item" id="item7" onclick="addItemToCart('Item 7', 70)">
+    <img src="download (3).jpg" alt="Item 7">
+    <p>Item 7 - $70</p>
+  </div>
+
+  <div class="item" id="item8" onclick="addItemToCart('Item 8', 80)">
+    <img src="download (4).jpg" alt="Item 8">
+    <p>Item 8 - $80</p>
+  </div>
+
+  <div class="item" id="item9" onclick="addItemToCart('Item 9', 90)">
+    <img src="download (5).jpg" alt="Item 9">
+    <p>Item 9 - $90</p>
+  </div>
+
+  <div class="item" id="item2" onclick="addItemToCart('Item 10', 100)">
+    <img src="download (6).jpg" alt="Item 10">
+    <p>Item 10 - $100</p>
+  </div>
+
+  <div class="item" id="item11" onclick="addItemToCart('Item 11', 110)">
+    <img src="download (8).jpeg" alt="Item 11">
+    <p>Item 11 - $110</p>
+  </div>
+
+  <div class="item" id="item12" onclick="addItemToCart('Item 12', 120)">
+    <img src="download (7).jpg" alt="Item 12">
+    <p>Item 12 - $120</p>
+  </div>
+
+  <div class="item" id="item13" onclick="addItemToCart('Item 13', 130)">
+    <img src="images (2).jpg" alt="Item 13">
+    <p>Item 13 - $130</p>
+  </div>
+
+  <div class="item" id="item14" onclick="addItemToCart('Item 14', 140)">
+    <img src="images (3).jpg" alt="Item 14">
+    <p>Item 14 - $140</p>
+  </div>
+
+  <div class="item" id="item15" onclick="addItemToCart('Item 15', 150)">
+    <img src="images (4).jpg" alt="Item 15">
+    <p>Item 15 - $150</p>
+  </div>
+
+  <div id="cart">
+    <h2>Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: <span id="cart-total">$0</span></p>
+  </div>
+
+  <!-- <script>
+    let cart = []; // Initialize cart
+
+    function addItemToCart(itemName, price) {
+      cart.push({ name: itemName, price: price }); // Add item to cart
+      updateCartUI(); // Update cart UI
+    }
+
+    function updateCartUI() {
+      const cartItemsElement = document.getElementById('cart-items');
+      const cartTotalElement = document.getElementById('cart-total');
+
+      cartItemsElement.innerHTML = ''; // Clear existing cart items
+      let totalPrice = 0;
+
+      cart.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `${item.name} - $${item.price}`;
+        cartItemsElement.appendChild(li);
+        totalPrice += item.price;
+      });
+
+      cartTotalElement.textContent = `$${totalPrice}`; // Update total price
+    }
+  </script> -->
+  <script src="app24.js"></script>
+</body>
+</html>
+
